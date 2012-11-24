@@ -35,24 +35,24 @@ $(function() {
 			});
 		}
 	};
-	function saveToCookies() {
+	function saveToLocalStorage() {
 		var pattern = getElement('pattern').val();
 		var sample = getElement('sample').val();
-		$.cookie('regex.pattern', pattern);
-		$.cookie('regex.sample', sample);
+		localStorage.setItem('regex.pattern', pattern)
+		localStorage.setItem('regex.sample', sample);
 	}
 
 	{
-		var pattern = $.cookie('regex.pattern') || 'w(h)?';
-		var sample = $.cookie('regex.sample') ||
+		var pattern = localStorage.getItem('regex.pattern') || 'w(h)?';
+		var sample = localStorage.getItem('regex.sample') ||
 			'Ignorance is the curse of God; knowledge is the wing wherewith we fly to heaven.\n' +
 		    '/William Shakespeare/';
 		getElement('pattern').val(pattern);
 		getElement('sample').val(sample);
 		getElement('pattern').keyup(testRegex);
 		getElement('sample').keyup(testRegex);
-		getElement('pattern').blur(saveToCookies);
-		getElement('sample').blur(saveToCookies);
+		getElement('pattern').blur(saveToLocalStorage);
+		getElement('sample').blur(saveToLocalStorage);
 		testRegex();
 	}
 });
