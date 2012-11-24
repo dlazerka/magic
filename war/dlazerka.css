@@ -89,21 +89,14 @@ header * {
 
 #timezones .time1,
 #timezones .time2 {
-  width: 12em;
+	width: 12em;
 }
 
 #timezones .tz1,
 #timezones .tz2 {
-  width: 3em;
+	width: 3em;
 }
 
-#base64 {
-	clear: both;
-}
-#base64 textarea {
-	width: 99%;
-	min-height: 5em;
-}
 
 #regex {
 	clear: both;
@@ -154,4 +147,13 @@ header * {
 	width: 3em;
 	float: right;
 	display: none; /* I never used modifiers */
+}
+
+
+#base64 {
+	clear: both;
+}
+#base64 textarea {
+	width: 99%;
+	min-height: 6em;
 }
