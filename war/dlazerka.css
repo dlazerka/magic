@@ -1,0 +1,157 @@
+body {
+	background-color: #eee;
+}
+body, input, textarea {
+	font-family: monospace,Courier;
+	font-size: 16px;
+	color: #333;
+}
+input[type="text"], textarea {
+  border: 1px #aaa solid;
+}
+header {
+	display: none;
+	border-bottom: 1px #ccc solid;
+	margin-bottom: 1em;
+	font-family: Georgia, sans-serif;
+}
+header * {
+	display: inline-block;
+	font-size: 1.5em;
+}
+#main {
+	margin: 2em auto;
+	background-color: white;
+	max-width: 50em;
+	min-width: 20em;
+	border: 1px #ccc solid;
+	border-radius: 3px;
+	padding: 1em;
+}
+#nav {
+	display: none;
+	float: left;
+	width: 8em;
+}
+#nav ul {
+	padding-left: 0;
+}
+#nav li {
+	list-style: none;
+	line-height: 2em;
+	text-align: right;
+	padding-right: 0.5em;
+}
+#nav li:hover {
+	background-color: #eee;
+	cursor: pointer;
+}
+.current {
+	font-weight: bold;
+}
+#content {
+	/*
+	margin-left: 9em;
+	border-left: 1px #ccc solid;
+	padding-left: 1em;
+	*/
+	min-height: 20em;
+	
+}
+#content section {
+	margin: 0 0.5em 1em;
+	/*float: left;*/
+	border: 1px #ccc solid;
+	border-radius: 3px;
+}
+#content section .body {
+	line-height: 2em;
+	padding: 0.5em 1em 1em;
+}
+
+#content section h3 {
+	margin: 0;
+	background-color: #EEE;
+	font-size: 17px;
+	border-bottom: 1px #AAA solid;
+	padding: 5px 10px;
+}
+
+
+#unixtime, #timezones {
+	float: left;
+}
+
+#unixtime .ts {
+	max-width: 11em;
+}
+
+
+#timezones .time1,
+#timezones .time2 {
+  width: 12em;
+}
+
+#timezones .tz1,
+#timezones .tz2 {
+  width: 3em;
+}
+
+#base64 {
+	clear: both;
+}
+#base64 textarea {
+	width: 99%;
+	min-height: 5em;
+}
+
+#regex {
+	clear: both;
+}
+#regex input, #regex textarea {
+	width: 99%;
+}
+
+#regex .run {
+	margin-bottom: 5px;
+	padding: 0;
+	border: 1px #CCC solid;
+}
+
+#regex .run .label {
+	float: left;
+	padding: 0 3px;
+	font-size: 0.9em;
+	line-height: 36px;
+}
+
+#regex .groups {
+	color: black;
+	padding: 0;
+	margin: 0;
+	line-height: 16px;
+}
+#regex .group {
+	display: inline-block;
+	font-size: 0.9em;
+	padding: 0 10px;
+	border-left: 1px #ccc solid;
+	line-height: 18px;
+}
+#regex .groupNo {
+}
+#regex .group:last-child {
+	border-right: 1px #ccc solid;
+}
+#regex .run:nth-child(even) .group:nth-child(even) {
+}
+
+#regex .run:nth-child(even) {
+}
+#regex .pattern {
+}
+#regex .modifiers {
+	width: 3em;
+	float: right;
+	display: none; /* I never used modifiers */
+}

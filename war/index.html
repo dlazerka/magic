@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Dzmitry Lazerka</title>
+	<script src="/jquery-1.6.4.min.js"></script>
+	<script src="/jquery.cookie.js"></script>
+	<script src="/dlazerka.js"></script>
+	<script src="/regex.js"></script>
+	<script src="/unixtime.js"></script>
+	<script src="/date.js"></script>
+	<script src="/timezones.js"></script>
+	<script src="/base64.js"></script>
+	<link type="text/css" rel="StyleSheet" href="dlazerka.css"/>
+</head>
+<body>
+	<div id="main">
+		<header>
+			<h1>Magic</h1>
+		</header>
+		<div id="nav">
+			<ul>
+				<li><a href="/" class="current">Tools</a></li>
+				<li><a style="color: transparent" href="http://dl.dropbox.com/u/42161049/CV.pdf">CV / Resume</a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<section id="unixtime">
+				<h3>Timestamp</h3>
+				<div class="body">
+					<input type="text" class="ts"/>
+					<span class="units">ms</span>
+					<br/>
+					<span class="utc"></span><br/>
+					<span class="local"></span><br/>
+					<span class="diff"></span>
+				</div>
+			</section>
+
+			<section id="timezones">
+				<h3>Timezones</h3>
+				<div class="body">
+					<input type="text" class="time1"/>
+					<input type="text" class="tz1" value="UTC"/>
+					<br/>
+					<input type="text" class="time2"/>
+					<input type="text" class="tz2"><br/>
+				</div>
+			</section>
+
+			<section id="base64">
+				<h3>Base64</h3>
+				<textarea class="decoded"></textarea>
+				<textarea class="encoded"></textarea>
+			</section>
+
+			<section id="regex">
+				<h3>Regexp</h3>
+				<div class="body">
+					<textarea class="pattern" rows="1" cols="1"></textarea>
+					<textarea rows="3" cols="1" class="sample" placeholder="Sample"></textarea>
+					<div class="execs"></div>
+					<span style="color: red;" class="error"></span>
+					<input type="text" class="modifiers" pattern="[gimy]+" value="i"/>
+				</div>
+			</section>
+
+			<div style="clear: both"></div>
+		</div>
+	</div>
+</body>
+</html>
