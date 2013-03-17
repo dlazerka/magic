@@ -52,23 +52,21 @@ $(function() {
 	function encodeEl() {
 		var decoded = el('decoded').val();
 		var encoded = encode(decoded);
-		el('encoded').text(encoded);
+		el('encoded').val(encoded);
 	}
 
 	function decodeEl() {
 		var encoded = el('encoded').val();
 		var decoded = decode(encoded);
-		el('decoded').text(decoded);
+		el('decoded').val(decoded);
 	}
 	
 	var sample = 'Man is distinguished, not only by his reason, but by this singular passion ' +
 		'from other animals, which is a lust of the mind, that by a perseverance ' +
 		'of delight in the continued and indefatigable generation of knowledge, ' +
 		'exceeds the short vehemence of any carnal pleasure.';
-//	sample = 'Man';
-	el('decoded').text(sample);
+	el('decoded').val(sample);
 	encodeEl();
-	decodeEl();
 	el('decoded').keyup(encodeEl);
 	el('encoded').keyup(decodeEl);
 });
