@@ -98,6 +98,11 @@ header * {
 }
 
 
+#myip {
+    display: inline-block;
+}
+
+
 #regex {
 	clear: both;
 }
