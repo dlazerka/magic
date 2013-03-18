@@ -15,4 +15,12 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
         <servlet-name>MyIpServlet</servlet-name>
         <url-pattern>/myip</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>RaspberryOnloginServlet</servlet-name>
+        <servlet-class>name.dlazerka.magic.RaspberryOnloginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RaspberryOnloginServlet</servlet-name>
+        <url-pattern>/raspberry/onlogin</url-pattern>
+    </servlet-mapping>
 </web-app>

@@ -1,7 +1,7 @@
 body {
 	background-color: #eee;
 }
-body, input, textarea {
+body, input, button, textarea {
 	font-family: monospace,Courier;
 	font-size: 16px;
 	color: #333;
@@ -157,6 +157,8 @@ header * {
 
 #base64 {
 	clear: both;
+}
+#base64 .file {
 }
 #base64 textarea {
 	width: 99%;
