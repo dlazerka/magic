@@ -45,8 +45,7 @@ $(function() {
 	{
 		var pattern = localStorage.getItem('regex.pattern') || 'w(h)?';
 		var sample = localStorage.getItem('regex.sample') ||
-			'Ignorance is the curse of God; knowledge is the wing wherewith we fly to heaven.\n' +
-		    '/William Shakespeare/';
+			'Ignorance is the curse of God; knowledge is the wing wherewith we fly to heaven.';
 		getElement('pattern').val(pattern);
 		getElement('sample').val(sample);
 		getElement('pattern').keyup(testRegex);
