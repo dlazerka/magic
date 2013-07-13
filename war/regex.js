@@ -34,7 +34,7 @@ $(function() {
 							'<div class="groupContent">' + escaped + '</div></div>');
 			});
 		}
-	};
+	}
 	function saveToLocalStorage() {
 		var pattern = getElement('pattern').val();
 		var sample = getElement('sample').val();

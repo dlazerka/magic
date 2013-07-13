@@ -7,7 +7,7 @@ body, input, button, textarea {
 	color: #333;
 }
 input[type="text"], input[type="number"], textarea {
-  border: 1px #aaa solid;
+	border: 1px #aaa solid;
 }
 header {
 	display: none;
@@ -56,7 +56,7 @@ header * {
 	padding-left: 1em;
 	*/
 	min-height: 20em;
-	
+
 }
 #content section {
 	margin: 0 0.5em 1em;
@@ -99,10 +99,10 @@ header * {
 
 
 #myip {
-    display: inline-block;
+	display: inline-block;
 }
 #myip .body {
-    min-width: 150px;
+	min-width: 150px;
 }
 
 #regex {

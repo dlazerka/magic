@@ -4,6 +4,6 @@ $(function() {
 	});
 
 	$.get('/myip', function(response) {
-	    $('#myip .body').text(response.addr);
+		$('#myip .body').text(response.addr);
 	});
 });

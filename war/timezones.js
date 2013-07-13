@@ -105,6 +105,5 @@ $(function() {
 	getElement('tz2').keyup(function () {convert('2', '1')});
 	getElement('ts').keyup(function () {convertTs()});
 	getElement('ts').change(function () {convertTs()});
-//	getElement('ts').val(new Date().getTime())
 	convert('2', '1');
 });
