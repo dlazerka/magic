@@ -1,0 +1,28 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="exploded">
+    <output-path>$PROJECT_DIR$/target/exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="magic.dlazerka.name" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="gson-2.2.2.jar" module-name="magic.dlazerka.name" />
+          <element id="library" level="project" name="gson-2.2.2" />
+          <element id="library" level="project" name="javax.mail" />
+        </element>
+      </element>
+      <element id="library" level="module" name="jsp-api.jar" module-name="magic.dlazerka.name" />
+      <element id="library" level="module" name="el-api.jar" module-name="magic.dlazerka.name" />
+      <element id="library" level="module" name="servlet-api.jar" module-name="magic.dlazerka.name" />
+      <element id="library" level="module" name="appengine-local-runtime-shared.jar" module-name="magic.dlazerka.name" />
+      <element id="library" level="module" name="appengine-tools-api.jar" module-name="magic.dlazerka.name" />
+      <element id="library" level="module" name="appengine-api-labs.jar" module-name="magic.dlazerka.name" />
+      <element id="library" level="module" name="appengine-endpoints.jar" module-name="magic.dlazerka.name" />
+      <element id="library" level="module" name="jsr107cache-1.1.jar" module-name="magic.dlazerka.name" />
+      <element id="library" level="module" name="appengine-jsr107cache-1.7.5.jar" module-name="magic.dlazerka.name" />
+      <element id="library" level="module" name="appengine-api-1.0-sdk-1.7.5.jar" module-name="magic.dlazerka.name" />
+      <element id="javaee-facet-resources" facet="magic.dlazerka.name/web/Web" />
+    </root>
+  </artifact>
+</component>

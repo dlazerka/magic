@@ -1,14 +1,13 @@
 package name.dlazerka.magic;
 
-import java.io.IOException;
+import com.google.gson.Gson;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.google.appengine.labs.repackaged.org.json.JSONException;
-import com.google.appengine.labs.repackaged.org.json.JSONWriter;
+import java.io.IOException;
+import java.util.HashMap;
 
 public class MyIpServlet extends HttpServlet {
 
@@ -17,17 +16,14 @@ public class MyIpServlet extends HttpServlet {
 			throws ServletException, IOException {
 		resp.setContentType("application/json");
 		resp.setCharacterEncoding("UTF-8");
-		JSONWriter w = new JSONWriter(resp.getWriter());
-		try {
-			w.object();
-			w.key("addr").value(req.getRemoteAddr());
-			w.key("host").value(req.getRemoteHost());
-			w.key("port").value(req.getRemotePort());
-			w.key("user").value(req.getRemoteUser());
-			w.endObject();
-		} catch (JSONException e) {
-			throw new IOException(e);
-		}
+		Gson gson = new Gson();
+		HashMap<String, String> map = new HashMap<String, String>();
+		map.put("addr", req.getRemoteAddr());
+		map.put("host", req.getRemoteHost());
+		map.put("port", "" + req.getRemotePort());
+		map.put("user", req.getRemoteUser());
+		String json = gson.toJson(map);
+		resp.getWriter().write(json);
 	}
 
 }
