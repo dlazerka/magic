@@ -6,7 +6,7 @@ body, input, button, textarea {
 	font-size: 16px;
 	color: #333;
 }
-input[type="text"], textarea {
+input[type="text"], input[type="number"], textarea {
   border: 1px #aaa solid;
 }
 header {
