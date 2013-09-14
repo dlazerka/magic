@@ -4,11 +4,16 @@ $(function() {
 	}
 
 	function encode(str) {
-		return window.btoa(unescape(encodeURIComponent(str)));
+		var encoded = encodeURIComponent(str);
+		var unescaped = unescape(encoded);
+		return window.btoa(unescaped);
 	}
 
 	function decode(str) {
-		return decodeURIComponent(escape(window.atob(str)));
+		str = str.replace(/\r|\n/g, '');
+		var atob = window.atob(str);
+		var escaped = escape(atob);
+		return decodeURIComponent(escaped);
 	}
 
 	var CONTENT = null;
